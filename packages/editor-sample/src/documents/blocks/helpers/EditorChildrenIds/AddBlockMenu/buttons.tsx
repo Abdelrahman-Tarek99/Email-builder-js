@@ -48,7 +48,6 @@ export const BUTTONS: TButtonProps[] = [
       },
     }),
   },
-
   {
     label: 'Button',
     icon: <SmartButtonOutlined />,

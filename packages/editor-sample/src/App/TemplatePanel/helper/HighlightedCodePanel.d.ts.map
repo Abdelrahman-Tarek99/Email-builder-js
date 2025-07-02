@@ -1,0 +1,1 @@
+{"version":3,"file":"HighlightedCodePanel.d.ts","sourceRoot":"","sources":["HighlightedCodePanel.tsx"],"names":[],"mappings":"AAAA,OAAO,KAA8B,MAAM,OAAO,CAAC;AAInD,KAAK,oBAAoB,GAAG;IAC1B,IAAI,EAAE,MAAM,GAAG,MAAM,GAAG,YAAY,CAAC;IACrC,KAAK,EAAE,MAAM,CAAC;CACf,CAAC;AACF,MAAM,CAAC,OAAO,UAAU,oBAAoB,CAAC,EAAE,IAAI,EAAE,KAAK,EAAE,EAAE,oBAAoB,4BA+BjF"}

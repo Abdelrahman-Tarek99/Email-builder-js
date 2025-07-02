@@ -1,0 +1,1 @@
+{"version":3,"file":"empty-email-message.js","sourceRoot":"","sources":["empty-email-message.ts"],"names":[],"mappings":"AAEA,MAAM,mBAAmB,GAAyB;IAChD,IAAI,EAAE;QACJ,IAAI,EAAE,aAAa;QACnB,IAAI,EAAE;YACJ,aAAa,EAAE,SAAS;YACxB,WAAW,EAAE,SAAS;YACtB,SAAS,EAAE,SAAS;YACpB,UAAU,EAAE,aAAa;YACzB,WAAW,EAAE,EAAE;SAChB;KACF;CACF,CAAC;AAEF,eAAe,mBAAmB,CAAC"}

@@ -1,9 +1,12 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "target": "es2015",
-    "module": "esnext",
-    "outDir": "dist"
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "outDir": "dist",
+    "rootDir": "src"
   },
-  "exclude": ["dist"]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
 }
+

@@ -52,7 +52,7 @@ const WELCOME: TEditorConfiguration = {
         },
       },
       props: {
-        text: 'Hi Anna 👋,',
+        text: 'Hi {{user.name}} 👋,',
       },
     },
   },
@@ -69,7 +69,7 @@ const WELCOME: TEditorConfiguration = {
         },
       },
       props: {
-        text: 'Welcome to Marketbase! Marketbase is how teams within fast growing marketplaces effortlessly monitor conversations to prevent disintermediation, identify problematic users, and increase trust & safety within their community.',
+        text: 'Welcome to {{company.name}}! We\'re excited to have you on board. Your account has been successfully created with the email {{user.email}}.',
       },
     },
   },
@@ -113,7 +113,6 @@ const WELCOME: TEditorConfiguration = {
     type: 'Text',
     data: {
       style: {
-        fontWeight: 'normal',
         padding: {
           top: 16,
           bottom: 16,
@@ -122,7 +121,7 @@ const WELCOME: TEditorConfiguration = {
         },
       },
       props: {
-        text: 'If you ever need help, just reply to this email and one of us will get back to you shortly. We’re here to help.',
+        text: 'If you ever need help, just reply to this email and one of us will get back to you shortly. We\'re here to help.',
       },
     },
   },

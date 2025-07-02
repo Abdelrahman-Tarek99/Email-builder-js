@@ -1,3 +1,4 @@
+import EMAIL_TEMPLATE from './sample/emailTemplate';
 import EMPTY_EMAIL_MESSAGE from './sample/empty-email-message';
 import ONE_TIME_PASSCODE from './sample/one-time-passcode';
 import ORDER_ECOMMERCE from './sample/order-ecommerce';
@@ -12,6 +13,8 @@ export default function getConfiguration(template: string) {
   if (template.startsWith('#sample/')) {
     const sampleName = template.replace('#sample/', '');
     switch (sampleName) {
+      case 'email-template':
+        return EMAIL_TEMPLATE;
       case 'welcome':
         return WELCOME;
       case 'one-time-password':

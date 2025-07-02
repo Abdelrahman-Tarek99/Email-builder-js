@@ -20,6 +20,7 @@ import ImportJson from './ImportJson';
 import JsonPanel from './JsonPanel';
 import MainTabsGroup from './MainTabsGroup';
 import ShareButton from './ShareButton';
+import TestEmailPanel from './TestEmailPanel';
 
 export default function TemplatePanel() {
   const document = useDocument();
@@ -65,6 +66,8 @@ export default function TemplatePanel() {
             <Reader document={document} rootBlockId="root" />
           </Box>
         );
+      case 'test':
+        return <TestEmailPanel />;
       case 'html':
         return <HtmlPanel />;
       case 'json':

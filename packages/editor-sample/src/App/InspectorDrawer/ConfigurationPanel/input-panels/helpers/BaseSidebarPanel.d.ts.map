@@ -1,0 +1,1 @@
+{"version":3,"file":"BaseSidebarPanel.d.ts","sourceRoot":"","sources":["BaseSidebarPanel.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAK,MAAM,OAAO,CAAC;AAI1B,KAAK,iBAAiB,GAAG;IACvB,KAAK,EAAE,MAAM,CAAC;IACd,QAAQ,EAAE,KAAK,CAAC,SAAS,CAAC;CAC3B,CAAC;AACF,MAAM,CAAC,OAAO,UAAU,gBAAgB,CAAC,EAAE,KAAK,EAAE,QAAQ,EAAE,EAAE,iBAAiB,qBAW9E"}

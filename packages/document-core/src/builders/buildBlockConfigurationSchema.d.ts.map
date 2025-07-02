@@ -1,0 +1,1 @@
+{"version":3,"file":"buildBlockConfigurationSchema.d.ts","sourceRoot":"","sources":["buildBlockConfigurationSchema.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,CAAC,EAAE,MAAM,KAAK,CAAC;AAExB,OAAO,EAAE,iBAAiB,EAAE,kBAAkB,EAAE,wBAAwB,EAAE,MAAM,UAAU,CAAC;AAE3F;;;;GAIG;AACH,MAAM,CAAC,OAAO,UAAU,6BAA6B,CAAC,CAAC,SAAS,iBAAiB,EAC/E,MAAM,EAAE,wBAAwB,CAAC,CAAC,CAAC,kFAWpC"}

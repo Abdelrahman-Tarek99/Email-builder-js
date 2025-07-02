@@ -18,5 +18,8 @@
     "noFallthroughCasesInSwitch": true,
     "allowSyntheticDefaultImports": true
   },
-  "exclude": ["dist"]
+   // Only compile your source files
+   "include": ["src/**/*"],
+   // Never touch your build output
+   "exclude": ["node_modules", "dist"]
 }
