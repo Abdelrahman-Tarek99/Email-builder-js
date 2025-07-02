@@ -1,11 +1,137 @@
-<div align="center">
-  <h1>EmailBuilder.js</h1>
-  <p align="center">
-    <a href="https://usewaypoint.github.io/email-builder-js/#sample/reservation-reminder">Demo / Playground</a>&emsp;&middot;&emsp;
-    <a href="https://www.emailbuilderjs.com">EmailBuilderJS.com</a>&emsp;&middot;&emsp;
-    <a href="https://github.com/usewaypoint/email-builder-js">GitHub</a>
-  </p>
-</div>
+## 📦 Using the Editor as a Local NPM Package
+
+You can build and use the EmailBuilder.js editor as a local npm package in your own React projects. Follow these steps:
+
+---
+
+### 1. Build and Pack the Editor
+
+Open your terminal and run:
+
+```sh
+cd packages/editor-sample
+npm install
+npm run build
+npm pack
+```
+
+This will generate a file like `email-builder-js-editor-1.0.0.tgz` in the `packages/editor-sample` directory.
+
+---
+
+### 2. Install the Package in Your Project
+
+Copy the `.tgz` file to your other project's root directory, then run:
+
+```sh
+npm install ./email-builder-js-editor-1.0.0.tgz
+```
+
+---
+
+### 3. Install Peer Dependencies
+
+Make sure your project also has these installed:
+
+```sh
+npm install react react-dom @mui/material @mui/icons-material @emotion/react @emotion/styled @fontsource/roboto
+```
+
+---
+
+### 4. Usage Example
+
+#### **main.tsx / main.jsx**
+
+```tsx
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import { ThemeProvider, createTheme, CssBaseline } from "@mui/material";
+import { CacheProvider } from "@emotion/react";
+import createCache from "@emotion/cache";
+
+const theme = createTheme({
+  palette: { mode: "light" }, // or "dark"
+});
+const cache = createCache({ key: "css", prepend: true });
+
+createRoot(document.getElementById("root")!).render(
+  <StrictMode>
+    <CacheProvider value={cache}>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <App />
+      </ThemeProvider>
+    </CacheProvider>
+  </StrictMode>
+);
+```
+
+#### **App.tsx**
+
+```tsx
+import React, { useState } from "react";
+import Editor from "email-builder-js-editor"; // or "@usewaypoint/editor-sample" if published as such
+import "@fontsource/roboto/300.css";
+import "@fontsource/roboto/400.css";
+import "@fontsource/roboto/500.css";
+import "@fontsource/roboto/700.css";
+
+// Define your document type
+export type TEditorDocument = {
+  root: {
+    type: string;
+    data: {
+      backdropColor: string;
+      canvasColor: string;
+      textColor: string;
+      fontFamily: string;
+    };
+    childrenIds: string[];
+  };
+};
+
+// Example default document
+const defaultDoc: TEditorDocument = {
+  root: {
+    type: "EmailLayout",
+    data: {
+      backdropColor: "#fff",
+      canvasColor: "#fff",
+      textColor: "#000",
+      fontFamily: "MODERN_SANS",
+    },
+    childrenIds: [],
+  },
+};
+
+export default function App() {
+  const [doc, setDoc] = useState(defaultDoc);
+
+  return (
+    <div style={{ padding: 16, height: "100vh" }}>
+      <Editor
+        document={doc}
+        rootBlockId="root"
+        onChange={(updated) => setDoc(updated)}
+      />
+    </div>
+  );
+}
+```
+
+---
+
+### 💡 **Tips**
+- You can customize the initial document, theme, and layout as needed.
+- Make sure to use the correct import path for your package name.
+- For advanced usage (custom send logic, templates, etc.), see the main documentation or source code.
+
+---
+
+Now you can use the EmailBuilder.js editor in your own React projects with full control and local development support!
 
 ## Introduction
 
