@@ -1,13 +1,20 @@
 {
-  "name": "@usewaypoint/editor-sample",
-  "version": "0.0.1",
+  "name": "email-builder-js-editor",
+  "version": "1.0.0",
+  "description": "Email Builder JS Editor - A React component for building email templates",
   "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "keywords": ["email", "builder", "react", "typescript", "template"],
+  "author": "Your Name",
+  "license": "MIT",
   "scripts": {
-    "dev": "vite",
+    "build": "npm run build:bundle && npm run build:types",
     "build:bundle": "vite build",
     "build:types": "tsc -p tsconfig.build.json",
-    "build":       "npm run build:bundle && npm run build:types",
-    "preview":     "vite preview"
+    "package": "npm run build && npm pack"
   },
   "dependencies": {
     "@emotion/react": "^11.11.3",
@@ -35,29 +42,15 @@
     "zod": "^3.22.4",
     "zustand": "^4.5.1"
   },
-  "devDependencies": {
-    "@types/insane": "^1.0.0",
-    "@types/react": "^18.2.55",
-    "@types/react-dom": "^18.2.19",
-    "@typescript-eslint/eslint-plugin": "^6.21.0",
-    "@typescript-eslint/parser": "^6.21.0",
-    "@vitejs/plugin-react-swc": "^3.5.0",
-    "eslint": "^8.56.0",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.5",
-    "eslint-plugin-simple-import-sort": "^12.0.0",
-    "typescript": "^5.2.2",
-    "vite": "^5.1.0"
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
-  "main":   "dist/index.js",
-  "module": "dist/index.mjs",
-  "types":  "dist/index.d.ts",
   "exports": {
     ".": {
-      "import":  "./dist/index.mjs",
+      "import": "./dist/index.mjs",
       "require": "./dist/index.js",
-      "types":   "./dist/index.d.ts"
+      "types": "./dist/index.d.ts"
     }
-  },
-  "files": ["dist"]
+  }
 }
