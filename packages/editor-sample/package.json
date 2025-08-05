@@ -14,7 +14,8 @@
     "build": "npm run build:bundle && npm run build:types",
     "build:bundle": "vite build",
     "build:types": "tsc -p tsconfig.build.json",
-    "package": "npm run build && npm pack"
+    "package": "npm run build && npm pack",
+    "dev": "vite --mode development"
   },
   "dependencies": {
     "@emotion/react": "^11.11.3",

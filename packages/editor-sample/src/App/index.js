@@ -18,11 +18,11 @@ export default function App() {
     const marginRightTransition = useDrawerTransition('margin-right', inspectorDrawerOpen);
     return (React.createElement(React.Fragment, null,
         React.createElement(InspectorDrawer, null),
-        React.createElement(SamplesDrawer, null),
+        // React.createElement(SamplesDrawer, null),
         React.createElement(Stack, { sx: {
                 marginRight: inspectorDrawerOpen ? `${INSPECTOR_DRAWER_WIDTH}px` : 0,
-                marginLeft: samplesDrawerOpen ? `${SAMPLES_DRAWER_WIDTH}px` : 0,
-                transition: [marginLeftTransition, marginRightTransition].join(', '),
+                //marginLeft: samplesDrawerOpen ? `${SAMPLES_DRAWER_WIDTH}px` : 0,
+                //transition: [marginLeftTransition, marginRightTransition].join(', '),
             } },
             React.createElement(TemplatePanel, null))));
 }

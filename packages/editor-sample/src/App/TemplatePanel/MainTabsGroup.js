@@ -22,8 +22,6 @@ export default function MainTabsGroup() {
                 React.createElement(EditOutlined, { fontSize: "small" })) }),
         React.createElement(Tab, { value: "preview", label: React.createElement(Tooltip, { title: "Preview" },
                 React.createElement(PreviewOutlined, { fontSize: "small" })) }),
-        React.createElement(Tab, { value: "test", label: React.createElement(Tooltip, { title: "Test Email" },
-                React.createElement(EmailOutlined, { fontSize: "small" })) }),
         React.createElement(Tab, { value: "html", label: React.createElement(Tooltip, { title: "HTML output" },
                 React.createElement(CodeOutlined, { fontSize: "small" })) }),
         React.createElement(Tab, { value: "json", label: React.createElement(Tooltip, { title: "JSON output" },

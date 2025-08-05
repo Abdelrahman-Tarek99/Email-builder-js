@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { CodeOutlined, DataObjectOutlined, EditOutlined, EmailOutlined, PreviewOutlined } from '@mui/icons-material';
+import { CodeOutlined, DataObjectOutlined, EditOutlined,  PreviewOutlined } from '@mui/icons-material';
 import { Tab, Tabs, Tooltip } from '@mui/material';
 
 import { setSelectedMainTab, useSelectedMainTab } from '../../documents/editor/EditorContext';
@@ -39,14 +39,14 @@ export default function MainTabsGroup() {
           </Tooltip>
         }
       />
-      <Tab
+      {/* <Tab
         value="test"
         label={
           <Tooltip title="Test Email">
             <EmailOutlined fontSize="small" />
           </Tooltip>
         }
-      />
+      /> */}
       <Tab
         value="html"
         label={

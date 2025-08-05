@@ -6,7 +6,7 @@ const editorStateStore = create(() => ({
     selectedSidebarTab: 'styles',
     selectedMainTab: 'editor',
     selectedScreenSize: 'desktop',
-    inspectorDrawerOpen: true,
+    inspectorDrawerOpen: false,
     samplesDrawerOpen: true,
 }));
 export function useDocument() {
