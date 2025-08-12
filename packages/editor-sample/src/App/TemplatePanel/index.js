@@ -578,14 +578,14 @@ export default function TemplatePanel() {
             },
                 React.createElement(Stack, { direction: "row", spacing: 2 }, 
                     React.createElement(MainTabsGroup, null),
-                    React.createElement(Box, { 
-                        sx: { 
-                            fontSize: '12px', 
-                            color: 'green',
-                            display: 'flex',
-                            alignItems: 'center'
-                        } 
-                    }, `JS-${instanceId}: ${componentId.substring(0, 8)}`)
+                    // React.createElement(Box, { 
+                    //     sx: { 
+                    //         fontSize: '12px', 
+                    //         color: 'green',
+                    //         display: 'flex',
+                    //         alignItems: 'center'
+                    //     } 
+                    // }, `JS-${instanceId}: ${componentId.substring(0, 8)}`)
                 ),
                 React.createElement(Stack, { direction: "row", spacing: 2 },
                     React.createElement(DownloadJson, null),
